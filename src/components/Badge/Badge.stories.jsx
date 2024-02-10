@@ -21,21 +21,21 @@ export default {
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default = {
   args: {
-    children: 'Badge'
+    label: 'Badge'
   },
 }
 
 export const Square = {
   args: {
     shape: 'square',
-    children: 'Square',
+    label: 'Square',
   },
 }
 
 export const Pill = {
   args: {
     shape: 'pill',
-    children: 'Pill',
+    label: 'Pill',
   },
 }
 

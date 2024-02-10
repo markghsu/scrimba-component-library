@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import './Badge.css'
 
-function Badge({shape='square', color='gray', children}) {
+function Badge({shape='square', color='gray', label}) {
     const classes = ['badge']
     classes.push(shape === 'pill'?'pill':'square')
     classes.push('color-' + color)
     return (
-        <div className={classes.join(' ')}>{children}</div>
+        <div className={classes.join(' ')}>{label}</div>
     )
 }
 
@@ -23,9 +23,9 @@ Badge.propTypes = {
     */
     shape: PropTypes.oneOf(['square', 'pill']),
     /**
-    * Badge contents
+    * Badge label
     */
-    children: PropTypes.node,
+    label: PropTypes.string,
 };
 
 Badge.defaultProps = {
