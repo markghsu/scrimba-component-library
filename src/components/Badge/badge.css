@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.badge {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.875em;
+    border: 0;
+    padding: 0.5em 1em;
+    color: #1F2937;
+    background: #F3F4F6;
+}
+
+.badge.square {
+    border-radius: 4px;
+}
+
+.badge.pill {
+    border-radius: 50vh; /* VERY LARGE NUMBER -- REGARDLESS OF HOW BIG OUR CHILDREN ARE, THIS WILL ALWAYS BE ROUND */
+}
+
+.badge.color-red {
+    color: #991B1B;
+    background: #FEE2E2;
+}
+
+.badge.color-yellow {
+    color: #92400E;
+    background: #FEF3C7;
+}
+
+.badge.color-green {
+    color: #065F46;
+    background: #D1FAE5;
+}
+
+.badge.color-blue {
+    color: #1E40AF;
+    background: #DBEAFE;
+}
+
+.badge.color-indigo {
+    color: #3730A3;
+    background: #E0E7FF;
+}
+
+.badge.color-purple {
+    color: #5B21B6;
+    background: #EDE9FE;
+}
+
+.badge.color-pink {
+    color: #9D174D;
+    background: #FCE7F3;
+}
