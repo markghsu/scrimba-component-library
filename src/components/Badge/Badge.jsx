@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import './Badge.css'
 
-function Badge({shape='square', color='gray', label}) {
+function Badge({shape='square', color='gray', label='badge'}) {
     const classes = ['badge']
     classes.push(shape === 'pill'?'pill':'square')
     classes.push('color-' + color)
@@ -31,4 +31,5 @@ Badge.propTypes = {
 Badge.defaultProps = {
     color: 'gray',
     shape: 'square',
+    label: 'badge'
 };
